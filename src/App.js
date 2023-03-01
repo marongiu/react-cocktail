@@ -19,16 +19,16 @@ function App() {
 
   }
 
-  console.log(data);
+
 
   
   return (
     <div className="App">  
        <header className='text-center bg-orange-300 py-5 text-2xl'>     
         <h1>APP</h1>
-        <SearchBar/>
+        <SearchBar handleCocktailSearch={handleCocktailSearch}/>
        </header>
-      <CocktailList />
+      <CocktailList data={data}/>
     </div>
   );
 }
