@@ -3,15 +3,13 @@ import CocktailCard from './CocktailCard';
 function CocktailList({data}) {
   return (
     <div className="cocktail-list">
-        <ul>
-          <li>
-            {
+        <ul className='grid grid-cols-3 gap-4'>
+                    {
               data.map((cocktail) => {
-               return <CocktailCard cocktail={cocktail}/>
+               return <li><CocktailCard cocktail={cocktail}/></li>
               })
             }
-          </li>
-        </ul>
+                </ul>
     </div>
   );
 }
